@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 78 pro</title>
+</head>
+<body>
+    <center>
+        <h2><b>doremon family book</b></h2>
+        <img src="download.jpeg" id="main_image" style="width: 40%;">
+        <h4 id="main_name" style="margin: 20px;">Family book</h4>
+        <br>
+        <button type="button" onclick="submit()" style="color: whitesmoke; background-color: black;">NEXT</button>
+    </center>
+    <script>
+        var image = [
+            "download.jpeg",
+            "Unknown.jpg",
+            "Unknown 2.jpg",
+            "Unknown 3.jpg",
+            "Unknown 4.jpg"
+        ];
+        var Name =
+        [
+            "Family Book",
+            "Nobisuke Nobi",
+            "Nobita",
+            "doraemon",
+            "Tamako Nobi"
+        ];
+        var i = 0;
+        function submit()
+        {
+            i++;
+            var number_of_member = 4
+            if(i > number_of_member)
+            {
+                i = 0;
+            }
+            var new_image = image[i];
+            var new_name = Name[i];
+            document.getElementById("main_image").src = new_image;
+            document.getElementById("main_name").innerText = new_name;
+        }
+    </script>
+</body>
+</html>
